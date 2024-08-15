@@ -1,16 +1,18 @@
-# tetris
+# Tetris
 
-A new Flutter project.
+# Components
+#### GameScreen: The main game screen where the Tetris game is played.
+#### Pixel: Widget representing the active/landed Tetris block pixel or the blank game grid pixel.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Game Mechanics
+## Blocks: 
+#### Various Tetris blocks such as Line, Square, J-block, H-block, L-block, N-block, S-block, T-block, and Z-block.
+## Movement:
+#### moveRight(): Moves the active block to the right if there is no boundary or other block in the way.
+#### moveLeft(): Moves the active block to the left if there is no boundary or other block in the way.
+#### moveDown(): Moves the active block down.\n
+## Game Loop: 
+#### The game loop runs every 400 milliseconds, moving the active block down and checking for completed rows.
+#### Row Completion: When a row is completely filled, it is removed, and all blocks above it move down.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
